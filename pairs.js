@@ -19,6 +19,21 @@
 ****************************************************************/
 function pairs(names) {
   // Your code goes here
+  pairs = [];
+
+
+    if (!names){
+    return [];
+    }else{
+      while(names.length > 1){
+        pairs.push([names.getRandom(), names.getRandom()])
+        }
+       if (names.length===1){
+           pairs.push(names);
+
+      }
+    }
+    return pairs;
 }
 
 module.exports = pairs;
